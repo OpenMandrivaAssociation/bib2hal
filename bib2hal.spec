@@ -1,6 +1,6 @@
 Name:       bib2hal
 Version:    2.3
-Release:    %mkrel 2
+Release:    %mkrel 3
 Summary:    Massive import BibTeX article into HAL
 License:    GPL
 Group:      Publishing
