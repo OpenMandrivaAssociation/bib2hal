@@ -1,0 +1,16 @@
+diff -Naur --exclude '*~' bib2hal-2.3/Makefile.am bib2hal-2.3-fix-installation/Makefile.am
+--- bib2hal-2.3/Makefile.am	2008-04-03 14:30:06.000000000 +0200
++++ bib2hal-2.3-fix-installation/Makefile.am	2008-04-16 11:19:28.000000000 +0200
+@@ -5,10 +5,5 @@
+ 
+ EXTRA_DIST = rc.xml.example halrc.dtd
+ 
+-$(docdir) $(datadir)/bib2hal:
+-	@install_sh@ -d $@
+-
+-install-exec-hook: $(docdir) $(datadir)/bib2hal
+-	@install_sh@ -m 644 -t $(docdir) rc.xml.example 
+-	@install_sh@ -m 644 -t $(datadir)/bib2hal halrc.dtd 
+-
++doc_DATA = rc.xml.example
++pkgdata_DATA = halrc.dtd

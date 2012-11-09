@@ -1,0 +1,19 @@
+diff -Naur --exclude '*~' bib2hal-2.3-fix-installation/Makefile.am bib2hal-2.3-create-man-page/Makefile.am
+--- bib2hal-2.3-fix-installation/Makefile.am	2008-04-16 11:19:28.000000000 +0200
++++ bib2hal-2.3-create-man-page/Makefile.am	2008-04-16 11:27:19.000000000 +0200
+@@ -1,5 +1,5 @@
+ DISTCLEANFILES       	= Makefile config.status catalog init config.log
+-CLEANFILES           	= 
++CLEANFILES           	= bib2hal.pl.1
+ 
+ bin_SCRIPTS            = bib2hal.pl
+ 
+@@ -7,3 +7,8 @@
+ 
+ doc_DATA = rc.xml.example
+ pkgdata_DATA = halrc.dtd
++
++man1_MANS = bib2hal.pl.1
++
++bib2hal.pl.1: bib2hal.pl
++	pod2man $< $@
