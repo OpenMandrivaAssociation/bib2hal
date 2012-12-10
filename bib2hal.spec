@@ -47,3 +47,25 @@ rm -rf %{buildroot}
 %{_datadir}/%{name}
 %{_mandir}/man1/bib2hal.pl.1*
 
+
+
+%changelog
+* Thu Dec 09 2010 Oden Eriksson <oeriksson@mandriva.com> 2.3-4mdv2011.0
++ Revision: 616751
+- the mass rebuild of 2010.0 packages
+
+* Wed Sep 02 2009 Thierry Vignaud <tv@mandriva.org> 2.3-3mdv2010.0
++ Revision: 424617
+- rebuild
+
+* Thu Aug 07 2008 Thierry Vignaud <tv@mandriva.org> 2.3-2mdv2009.0
++ Revision: 266239
+- rebuild early 2009.0 package (before pixel changes)
+
+* Wed Apr 16 2008 Guillaume Rousse <guillomovitch@mandriva.org> 2.3-1mdv2009.0
++ Revision: 194629
+- import bib2hal
+
+
+* Thu Apr 10 2008 Guillaume Rousse <guillomovitch@mandriva.org> 2.3-1mdv2008.1
+- first mdv release
