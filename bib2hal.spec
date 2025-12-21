@@ -8,6 +8,11 @@ URL:        https://gforge.inria.fr/projects/bib2hal/
 Source:     http://gforge.inria.fr/frs/download.php/4410/%{name}-%{version}.tar.gz
 Patch0:     %{name}-2.3-fix-installation.patch
 Patch1:     %{name}-2.3-create-man-page.patch
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:  perl(Text::BibTeX)
 BuildRequires:  perl(IO::Prompt)
 BuildRequires:  perl(SOAP::Lite)
